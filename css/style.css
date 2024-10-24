@@ -1,0 +1,140 @@
+
+* {
+    --primary-color: #3498db;
+  }
+  
+  body {
+    color: #555; 
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .navbar-brand {
+    font-size: 30px;
+  }
+  
+  .nav-link {
+    font-size: 18px !important;
+    font-weight: 500;
+  }
+  
+  .head-section {
+    background-image: linear-gradient(180deg, #c4b6fd, #93acfc);
+  }
+  
+  .navbar-brand,
+  .text-primary {
+    color: #0a58ca !important;
+  }
+  
+  .btn-primary {
+    background-color: #0a58ca !important;
+    border: none;
+  }
+  
+  .nav-link:hover {
+    color: #0a58ca;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  .btn-primary:hover {
+    background-color: #257dfd !important;
+  }
+  
+  .blue-bg {
+    background-color: #0a58ca;
+    color: #fff;
+  }
+  
+  .ionicons {
+    color: #0a58ca;
+    background-color: #f2f2f2;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 12px;
+  }
+  
+  .nav-tabs {
+    border: none;
+  }
+  
+  .nav-tabs .active {
+    background-color: #0a58ca !important;
+    border: none;
+    color: #fff !important;
+  }
+  
+  .footer-section {
+    background-color: #0a58ca !important;
+    border: none;
+    color: #fff !important;
+  }
+  
+  .carousel-item{
+    height: 80vh;
+  }
+  .carousel-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+  /* Product Grid Section */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .product-card h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .product-card p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .product-card .btn-primary {
+    margin-top: 10px;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the Price and Buy Button */
+  .product-card .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  .product-card .btn-primary {
+    padding: 8px 20px;
+  }
+  
+  

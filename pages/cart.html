@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="head-section">
+  <nav class="navbar navbar-expand-lg py-4">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">AmmarTech</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item ms-0 ms-md-3">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item ms-0 ms-md-3">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item ms-0 ms-md-3">
+            <a class="nav-link" href="#AboutSection">About </a>
+          </li>
+
+          <li class="nav-item ms-0 ms-md-3">
+            <a class="px-4 py-2 btn btn-primary" href="cart.html">Cart </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  </div>
+
+  <!-- Cart Section -->
+  <section class="cart-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Shopping Cart</h2>
+      <div class="row">
+        <!-- Cart Items -->
+        <div class="col-lg-8">
+          <table class="table table-hover align-middle">
+            <thead>
+              <tr>
+                <th scope="col">Product</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Cart Item 1 -->
+              <tr>
+                <td>
+                  <div class="cart-product d-flex align-items-center">
+                    <img src="/assets/headphones-1.webp" alt="Product 1" class="img-fluid" style="width: 100px; height: 100px; object-fit: cover;">
+                    <div class="ms-3">
+                      <h5>Product One</h5>
+                      <p>High Quality Tech</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="price">$399</td>
+                <td>
+                  <input type="number" value="1" class="form-control" style="width: 70px;">
+                </td>
+                <td class="total">$399</td>
+                <td>
+                  <button class="btn btn-danger">Remove</button>
+                </td>
+              </tr>
+              <!-- Cart Item 2 -->
+              <tr>
+                <td>
+                  <div class="cart-product d-flex align-items-center">
+                    <img src="/assets/vr-2.webp" alt="Product 3" class="img-fluid" style="width: 100px; height: 100px; object-fit: cover;">
+                    <div class="ms-3">
+                      <h5>Product Three</h5>
+                      <p>Wireless Earbuds</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="price">$199</td>
+                <td>
+                  <input type="number" value="2" class="form-control" style="width: 70px;">
+                </td>
+                <td class="total">$398</td>
+                <td>
+                  <button class="btn btn-danger">Remove</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Cart Summary -->
+        <div class="col-lg-4">
+          <div class="card p-4">
+            <h4 class="text-center mb-4">Order Summary</h4>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Subtotal
+                <span class="price">$797</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Shipping
+                <span class="price">$20</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Total
+                <span class="price">$817</span>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-block">Proceed to Checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section blue-bg py-4">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2024 MyStore. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/script.js"></script> 
+</body>
+</html>
